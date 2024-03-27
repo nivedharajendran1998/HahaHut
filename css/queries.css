@@ -1,0 +1,59 @@
+/* ***********************************************/
+/* below  750px smaller tablets*/
+/* 1rem = 1em = 16px */
+/* 750/16 = 46em */
+/* ********************************************** */
+
+@media (max-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+
+  .grid {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .btn-hero-link {
+    width: 50%;
+  }
+
+  .btn-joke {
+    width: 30%;
+  }
+}
+
+/* ***********************************************/
+/* below  544px smaller tablets*/
+/* 1rem = 1em = 16px */
+/* 560/16 = 40em */
+/* ********************************************** */
+@media (max-width: 40em) {
+  html {
+    font-size: 40%;
+  }
+
+  .section-intro {
+    margin: 25.6rem auto;
+    font-family: inherit;
+    padding: 9.6rem;
+  }
+
+  .section-joke {
+    margin: 25.6rem auto;
+    padding: 9.6rem;
+  }
+
+  .grid {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .btn-hero-link {
+    width: 50%;
+  }
+
+  .btn-joke {
+    width: 30%;
+  }
+}

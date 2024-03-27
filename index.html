@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="
+    Haha-hut!! is your go-to web app for instant laughter. With just a click, access a diverse array of jokes – from puns to wordplay. User-friendly too! Haha-hut!! turns every moment into a joy-filled experience. Join us in the laughter revolution where humor is just a click away!"
+    />
+    <title>HaHa-Hut!-Happy Always!</title>
+    <link rel="icon" href="image/smile-3d-removebg-preview.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="section-intro" id="section-intro">
+        <div class="container grid grid-1-col">
+          <h1 class="heading-primary">
+            HaHa-Hut<span class="yellow">!</span><span class="blue">!</span>
+          </h1>
+          <p class="hero-description">
+            Welcome to HaHa-Hut!, the ultimate destination where humor meets the
+            internet, <span class="blue">one joke at a time.</span>
+          </p>
+
+          <a class="btn-hero-link" href="#section-joke" onclick="playSound()"
+            >WANNA LAUGH??</a
+          >
+
+          <audio id="playSound">
+            <source src="/audio/90s-game-ui-6-185099.mp3" type="audio/mpeg" />
+            Your browser does not support the audio tag.
+          </audio>
+        </div>
+      </section>
+      <section class="section-joke" id="section-joke">
+        <div class="container joke-grid">
+          <p class="joke-heading">
+            Here's an amazing joke for you
+            <span class="blue">at just one click!</span>
+          </p>
+          <p class="joke-box"></p>
+          <div class="joke-container">
+            <img
+              class="btn-joke"
+              src="image/cool-3d-removebg-preview.png"
+              alt="cool-emoji"
+              onclick="jokeSound()"
+            />
+            <p class="heading-tertiary">
+              Click on the cool dude for cool jokes!
+            </p>
+            <audio id="jokeSound">
+              <source src="/audio/cartoon-jump-6462.mp3" type="audio/mpeg" />
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="copyright">
+        Copyright &copy; <span class="year">2027</span> by Nivedha R, Inc. All
+        rights reserved
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
